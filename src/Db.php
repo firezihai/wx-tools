@@ -99,8 +99,12 @@ class Db
             'A4D9024A' => 'country', // 国家
             'E2EAA8D1' => 'province', // 省份
             '1D025BBF' => 'city', // 城市
-            // '759378AD' => 'telephone',
-            '74752C06' => 'sex', // 性别 1男2女
+            '759378AD' => 'telephone',
+            '74752C06' => 'sex', //  性别 0未设置  1男2女
+            '0E719F13'=>'des_image' ,//描述中的图片信息
+            '81AE19B4'=>'moment_backgroud_img',// 朋友圈背景图
+             'F917BCC0'=>'company_name',
+            '4EB96D85'=>'qy_wechat_atrr',
         ];
         // 其他扩展信息，可将用while循环去根据规则解析出来
         $result = [];
