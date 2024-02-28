@@ -1,0 +1,26 @@
+{
+    "name": "firezihai/wx-tools",
+    "type": "library",
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.50",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Firezihai\\WxTools\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "firezihai",
+            "email": "firezihai@163.com"
+        }
+    ],
+    "require": {
+        "symfony/process": "^6.0"
+    },
+	"scripts": {
+        "cs-fix": "php-cs-fixer fix $1",
+        "analyse": "phpstan analyse --memory-limit 300M -l 0 -c phpstan.neon ./src"
+    }
+}
